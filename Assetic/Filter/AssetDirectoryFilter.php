@@ -54,7 +54,7 @@ class AssetDirectoryFilter extends BaseCssFilter
             }
 
             $file = PathUtils::resolveUrl($asset, $url);
-            $target = $this->directory->add($file);
+            $target = $directory->add($file);
 
             $path = PathUtils::resolveRelative($target, $asset->getTargetPath()).basename($file);
 
