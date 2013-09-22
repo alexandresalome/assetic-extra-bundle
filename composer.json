@@ -1,6 +1,7 @@
 {
     "name": "alexandresalome/assetic-extra-bundle",
     "description": "Extra feature for Assetic (asset directory)",
+    "license": "MIT",
 
     "autoload": {
         "psr-0": {
