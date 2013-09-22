@@ -51,6 +51,8 @@ Edit your ``config.yml`` and add a section **alex_assetic_extra**:
 
 Or to quickly use it:
 
+.. code-block:: yaml
+
     alex_assetic_extra:
         asset_directory: true
 
