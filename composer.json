@@ -1,0 +1,16 @@
+{
+    "name": "alexandresalome/assetic-extra-bundle",
+    "description": "Extra feature for Assetic (asset directory)",
+
+    "autoload": {
+        "psr-0": {
+            "Alex\\AsseticExtraBundle": ""
+        }
+    },
+
+    "target-dir": "Alex/AsseticExtraBundle",
+
+    "require": {
+        "kriswallsmith/assetic": ">=1.1,<2.0"
+    }
+}
