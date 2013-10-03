@@ -31,6 +31,15 @@ Edit your ``composer.json`` and add the following package as a **require**:
 
 Edit your ``app/AppKernel.php`` and add the bundle to the **registerBundles** method:
 
+.. code-block:: php
+
+	public function registerBundles()
+	{
+		$bundles = array(
+		   // ...
+		   new Alex\AsseticExtraBundle\AlexAsseticExtraBundle(),
+		   // ...
+
 Configuration
 -------------
 
@@ -63,7 +72,7 @@ To use it, use the filter in your ``{% stylesheets %}`` template blocks:
 
 .. code-block:: html+jinja
 
-    {% stylesheets filters="combine,assetdirectory"
+    {% stylesheets filter="combine,assetdirectory"
         "@SomeBundle/Resources/assets/form.css"
         "../vendor/path/to/some.js"
     %}
