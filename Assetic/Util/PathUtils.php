@@ -57,7 +57,7 @@ abstract class PathUtils
             return $url;
         }
 
-        $root = $asset->getSourceRoot();
+        $root = dirname($asset->getSourceRoot().'/'.$asset->getSourcePath());
         $path = dirname($asset->getTargetPath());
 
         if ('.' === $path) {
@@ -67,7 +67,7 @@ abstract class PathUtils
         }
 
         if (null !== $root) {
-            $image = $root.'/'.$image;
+            $image = $root.'/'.$url;
         }
 
         // cleanup local URLs
