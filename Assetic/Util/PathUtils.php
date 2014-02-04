@@ -57,7 +57,10 @@ abstract class PathUtils
             return $url;
         }
 
-        $root = dirname($asset->getSourceRoot().'/'.$asset->getSourcePath());
+        // source directory of the asset
+        $root = dirname($asset->getSourceRoot().'/'.$asset->getTargetPath());
+
+        // path directory where asset is being copied
         $path = dirname($asset->getTargetPath());
 
         if ('.' === $path) {
