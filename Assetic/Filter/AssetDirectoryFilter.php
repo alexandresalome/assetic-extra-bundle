@@ -49,7 +49,7 @@ class AssetDirectoryFilter extends BaseCssFilter
         $content = $this->filterUrls($asset->getContent(), function ($matches) use ($asset, $directory) {
             $url = $matches['url'];
 
-            if (false !== strpos($url, '://') || 0 === strpos($url, 'data:')) {
+            if (false !== strpos($url, '://') || 0 === strpos($url, 'data:') || 0 === strpos($url, '#')) {
                 return $matches[0];
             }
 
